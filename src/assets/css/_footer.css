@@ -1,0 +1,237 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black-muted);
+    color: var(--white);
+    padding-bottom: 30px;
+
+    hr {
+        border-top: 2px solid var(--footer-hr-divider);
+    }
+
+    .f-content {
+        padding: calc(var(--spacing) * 10) calc(var(--spacing) * 4);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        &.top-content {
+        }
+
+        &.bottom-content {
+            flex-direction: column;
+            gap: 8px;
+
+            .office-line {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                justify-content: space-between;
+
+                .address {
+                    display: flex;
+                    gap: 4px;
+                }
+
+            }
+        }
+
+        .fw-widget {
+
+            .fw-title {
+                text-transform: uppercase;
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 16px;
+                letter-spacing: 1px;
+                margin-bottom: 8px;
+            }
+
+            ul {
+                list-style: none;
+                margin-left: unset;
+
+                li {
+                    font-weight: 600;
+                    line-height: 32px;
+
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            &.consulting-part {
+                flex: 6;
+                min-width: 220px;
+
+                .title {
+                    font-size: 24px;
+                    line-height: 32px;
+                    font-weight: 600;
+                    letter-spacing: .2px;
+                    margin-bottom: 24px;
+                }
+
+                .consult-image img {
+                    border-radius: 50%;
+                    margin-bottom: 12px;
+                }
+
+                .consult-name {
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-bottom: 8px;
+                    font-weight: 600;
+                }
+
+                .consult-description {
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 400;
+                    margin-bottom: 24px;
+                }
+
+                form.send-consult {
+                    max-width: 390px;
+
+                    input {
+                        padding: 0 4px 0 12px;
+                        background-color: #fff;
+                        border-radius: 8px;
+                        color: #000;
+                        height: 40px;
+                        width: 100%;
+                    }
+
+                    button {
+                        position: absolute;
+                        right: 4px;
+                        top: 4px;
+                        padding: 8px 4px;
+
+                    }
+                }
+            }
+
+            &.navigation {
+                flex: 2;
+
+
+                @media screen and (max-width: 768px) {
+                    order: 3;
+                    flex-basis: 100%;
+                }
+
+                a {
+                    line-height: 20px;
+                }
+
+            }
+
+            &.contacts {
+                flex: 4;
+                min-width: 220px;
+
+                ul {
+                    margin-bottom: 8px;
+
+                    li {
+                        text-align: right;
+
+                        img {
+                            display: inline-block;
+                        }
+
+                        .d-flex {
+                            display: flex;
+                            gap: 8px;
+                            justify-content: end;
+
+
+                        }
+                    }
+                }
+
+
+                .work-time {
+                    margin-top: 8px;
+                    color: #C5D0D0;
+                }
+
+
+            }
+
+
+        }
+
+    }
+
+    @media screen and (max-width: 576px) {
+        padding-bottom: 100px;
+    }
+
+
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    justify-content: end;
+
+    @media screen and (max-width: 576px) {
+        gap: var(--space-1);
+    }
+}
+
+.mobile-floating-book-button {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding: 10px;
+    bottom: 0;
+    box-shadow: 0 0 20px 2px #bebebe;
+
+    .social-icons {
+
+
+        .dzen-button {
+            background-color: var(--black-muted);
+            border-radius: 5px;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+
+
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-2);
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+
+
+    }
+
+    @media screen and (max-width: 400px) {
+        gap: var(--space-1);
+        .social-icons {
+            overflow-x: scroll;
+            flex-wrap: unset;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        .social-icons {
+            /* display: none; */
+        }
+    }
+
+}

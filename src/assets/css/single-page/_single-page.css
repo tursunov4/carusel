@@ -1,0 +1,107 @@
+.single-page {
+
+    .sp-title-block {
+        display: flex;
+        flex-direction: row;
+
+        .left-side {
+            order: 1 !important;
+        }
+
+        .sidebar-part {
+            flex-basis: 288px;
+            display: flex;
+            justify-content: flex-end;
+            order: 2 !important;
+
+            .sidebar-part-content {
+                align-items: flex-end;
+            }
+
+            @media screen and (max-width: 576px) {
+                flex: 1 1 100%;
+            }
+
+        }
+    }
+
+}
+
+.doctors {
+
+    .doctors-content {
+
+        .image {
+            max-width: 170px;
+            flex: 0 1 170px;
+            max-height: 300px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            @media screen and (max-width: 520px) {
+                flex: 1 0 100%;
+                max-width: 100%;
+                max-height: 100%;
+                height: auto;
+                width: auto;
+
+            }
+
+
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: var(--border-radius-8);
+            }
+        }
+
+
+    }
+
+
+}
+
+.related-cards {
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: rgb(221, 107, 77);
+    }
+
+    &::-webkit-scrollbar-track {
+        background: rgb(235, 235, 235);
+    }
+
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-3);
+    overflow-x: auto;
+
+
+    .related-card {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-3);
+        border: 1px solid lightgray;
+        border-radius: var(--border-radius-8);
+        min-width: 200px;
+        width: 200px;
+        margin-bottom: 10px;
+
+        .image-block {
+            overflow: hidden;
+            border-top-left-radius: var(--border-radius-8);
+            border-top-right-radius: var(--border-radius-8);
+        }
+
+    }
+
+}

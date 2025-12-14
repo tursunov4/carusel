@@ -1,0 +1,67 @@
+@use '../../assets/scss/variables' as *;
+@use '../../assets/scss/mixins' as *;
+
+.footer {
+  background: $gray-900;
+  color: $white;
+  padding: $space-8 0 $space-6;
+}
+
+.section {
+  @include container;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: $space-8;
+}
+
+.left {
+  h3 { @include type(h3); margin-bottom: $space-4; color: $white; }
+  .card {
+    display: grid; grid-template-columns: 72px 1fr; gap: $space-4; align-items: center;
+  }
+  .avatar { width: 72px; height: 72px; border-radius: 50%; overflow: hidden; background: $gray-800; }
+  .name { @include type(headline); color: $white; }
+  .role { @include type(notes); color: $gray-200; }
+  .cta {
+    margin-top: $space-4;
+    display: flex; gap: 8px; align-items: stretch;
+    input {
+      flex: 1; border-radius: 12px; border: 1px solid $gray-700; padding: 12px 14px; background: transparent; color: $white;
+    }
+    button {
+      width: 44px; border-radius: 12px; background: $orange-500; border: 1px solid $orange-500; color: $white; font-weight: $fw-semibold;
+    }
+    input:focus { @include focus-ring($teal-500); }
+    button:hover { background: $orange-600; border-color: $orange-600; }
+  }
+  .divider { height: 1px; background: rgba(255,255,255,.25); margin: $space-6 0; }
+  .brand { color: $orange-500; @include type(headline); margin-bottom: $space-2; }
+  .tagline { color: $white; @include type(primary); }
+}
+
+.navCol, .contacts {
+  padding-top: $space-4;
+}
+
+.navCol {
+  .title { @include type(tag); color: $gray-200; opacity: .9; margin-bottom: $space-3; }
+  ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  a { color: $white; @include type(primary); }
+  a:hover { color: $orange-500; }
+}
+
+.contacts {
+  ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .muted { color: $gray-200; @include type(notes); }
+  .social { display: flex; gap: 10px; margin-top: $space-2; }
+  .badge { width: 36px; height: 36px; border-radius: 50%; background: $white; display: inline-flex; align-items: center; justify-content: center; color: $teal-700; font-weight: 700; }
+}
+
+.bottom {
+  @include container;
+  margin-top: $space-6;
+  border-top: 1px solid rgba(255,255,255,.25);
+  padding-top: $space-3;
+  display: flex; align-items: center; gap: $space-6; color: $gray-200;
+  @include type(notes);
+}

@@ -1,0 +1,48 @@
+
+.gr {
+    margin-bottom: var(--space-4);
+}
+
+label {
+    font-size: var(--notes-size);
+    line-height: var(--notes-line);
+    font-weight: var(--notes-weight);
+    color: var(--black-subheading);
+
+    &:required {
+
+        &::after {
+            content: "*";
+            margin-left: var(--space-1);
+            color: var(--red-primary);
+        }
+
+    }
+}
+
+input, select, textarea {
+    width: 100%;
+    border: 1px solid var(--black-border);
+    border-radius: var(--border-radius-8);
+    padding-inline: var(--space-3);
+    padding-block: var(--space-2);
+    color: var(--black-primary);
+
+    font-size: var(--primary-size);
+    line-height: var(--primary-line);
+    font-weight: var(--primary-weight);
+
+    &.w-unset {
+        width: unset;
+    }
+
+
+}
+
+input[type=file] {
+    &::file-selector-button {
+        background-color: var(--orange-secondary);
+        border-radius: var(--border-radius-8);
+        padding: 5px 10px;
+    }
+}

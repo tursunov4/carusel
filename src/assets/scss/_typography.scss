@@ -1,0 +1,17 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+h1 { @include type(h1); margin: 0 0 $space-4; }
+h2 { @include type(h2); margin: 0 0 $space-4; }
+h3 { @include type(h3); margin: 0 0 $space-3; }
+h4 { @include type(h4); margin: 0 0 $space-3; }
+
+.lead { @include type(headline); }
+.accent { @include type(accent); }
+p, .text-primary { @include type(primary); margin: 0 0 $space-3; }
+.small, .notes { @include type(notes); }
+.small-accent, .notes-accent { @include type(notes-accent); }
+.tag { @include type(tag); background: $orange-50; color: $orange-700; padding: 2px 8px; border-radius: 999px; display: inline-block; }
+
+a { color: $teal-700; text-decoration: none; }
+a:hover { color: $teal-800; text-decoration: underline; }

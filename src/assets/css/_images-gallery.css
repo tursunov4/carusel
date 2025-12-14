@@ -1,0 +1,67 @@
+.images-gallery {
+
+    .splide__list {
+        align-items: center;
+        justify-content: space-between;
+
+        .splide__slide {
+
+            &.is-active {
+                width: 230px !important;
+                border: unset !important;
+
+                a {
+                    pointer-events: auto; /* активная снова кликабельна */
+                }
+
+
+                img {
+                    width: 230px;
+                }
+
+            }
+
+            & a {
+                pointer-events: none; /* все ссылки не кликабельны */
+            }
+
+
+            width: 192px !important;
+            border-radius: var(--border-radius-8);
+
+            img {
+                width: 192px;
+                border-radius: var(--border-radius-8);
+            }
+        }
+
+
+    }
+
+
+    &.video {
+        .splide__slide.is-active {
+            position: relative;
+
+            a {
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    background-image: url("../img/icons/player.svg");
+                    background-repeat: no-repeat;
+                    z-index: 99;
+                    width: 111px;
+                    height: 111px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+
+        }
+    }
+
+
+}

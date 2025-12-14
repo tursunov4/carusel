@@ -1,0 +1,118 @@
+/* fonts */
+
+.headline,
+.fnt-primary,
+.fnt-notes,
+.fnt-accent,
+.fnt-notes-accent,
+.fnt-tags-small,
+.fnt-h1,
+.fnt-h2,
+.fnt-h3,
+.fnt-h4,
+.fnt-description {
+    color: var(--black-primary);
+}
+
+
+.headline {
+    font-size: var(--headline-size);
+    line-height: var(--outline-line);
+    font-weight: var(--outline-weight);
+}
+
+.fnt-primary {
+    font-size: var(--primary-size);
+    line-height: var(--primary-line);
+    font-weight: var(--primary-weight);
+}
+
+.fnt-notes {
+    font-size: var(--notes-size);
+    line-height: var(--notes-line);
+    font-weight: var(--notes-weight);
+}
+
+.fnt-accent {
+    font-size: var(--accent-size);
+    line-height: var(--accent-line);
+    font-weight: var(--accent-weight);
+}
+
+.fnt-description {
+    font-size: var(--description-size);
+    line-height: var(--description-line);
+    font-weight: var(--description-weight);
+}
+
+.fnt-notes-accent {
+    font-size: var(--notes-accent-size);
+    line-height: var(--notes-accent-line);
+    font-weight: var(--notes-accent-weight);
+}
+
+.fnt-tags-small {
+    font-size: var(--tag-size);
+    line-height: var(--tag-line);
+    font-weight: var(--tag-weight);
+}
+
+.fnt-h1 {
+    font-size: var(--h1-size);
+    line-height: var(--h1-line);
+    font-weight: var(--h1-weight);
+
+    @media screen and (max-width: 576px) {
+        font-size: var(--h2-size);
+        line-height: var(--h2-line);
+    }
+}
+
+.fnt-h2 {
+    font-size: var(--h2-size);
+    line-height: var(--h2-line);
+    font-weight: var(--h2-weight);
+
+    @media screen and (max-width: 576px) {
+        font-size: var(--h3-size);
+        line-height: var(--h3-line);
+    }
+}
+
+.fnt-h3 {
+    font-size: var(--h3-size);
+    line-height: var(--h3-line);
+    font-weight: var(--h3-weight);
+
+    @media screen and (max-width: 576px) {
+        font-size: var(--h4-size);
+        line-height: var(--h4-line);
+    }
+}
+
+.fnt-h4 {
+    font-size: var(--h4-size);
+    line-height: var(--h4-line);
+    font-weight: var(--h4-weight);
+
+    @media screen and (max-width: 576px) {
+        font-size: var(--h5-size);
+        line-height: var(--h5-line);
+    }
+}
+
+.c-black-placeholder {
+    color: var(--black-placeholder);
+}
+
+.c-black-subheading {
+    color: var(--black-subheading);
+}
+
+.c-moderate-primary {
+    color: var(--moderate-primary);
+}
+
+.c-orange-primary {
+    color: var(--orange-primary);
+}

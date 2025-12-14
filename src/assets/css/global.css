@@ -1,0 +1,46 @@
+@import "./_vars.css";
+
+@import "tailwindcss";
+
+@import "./_base.css";
+@import "./_fonts.css";
+@import "./_flex.css";
+@import "./_sides.css";
+@import "./_buttons.css";
+@import "./_forms.css";
+@import "./_modal.css";
+@import "./_utilities.css";
+@import "./_breadcrumbs.css";
+@import "./_images-gallery.css";
+
+/* header */
+@import "./_header.css";
+
+/* index-page */
+@import "./index-page/_filters-sidebar.css";
+@import "./index-page/_index-page-content.css";
+
+/* cards */
+@import "./_base-card.css";
+@import "./cards/_wide-card.css";
+@import "./cards/_pills.css";
+@import "./cards/_gray-cards.css";
+
+/* single-page */
+@import "./single-page/_single-page.css";
+@import "./single-page/sections/_images-block.css";
+@import "./single-page/sections/_excursion-paid-service-section.css";
+@import "./single-page/_stomatologiya-hero.css";
+@import "./_consultation.css";
+
+/* pages */
+@import "./page/_page.css";
+
+/* footer */
+@import "./_footer.css";
+
+
+
+
+
+

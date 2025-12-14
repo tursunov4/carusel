@@ -1,0 +1,32 @@
+.breadcrumbs {
+    padding-top: 20px;
+    padding-bottom: 24px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: var(--fw-semibold);
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+
+
+    a {
+        color: var(--moderate-primary);
+    }
+
+    span.active {
+        color: var(--black-placeholder);
+    }
+
+
+    *:not(:first-child)::before {
+        display: inline-block;
+        position: relative;
+        top: -2px;
+        content: ' ';
+        margin-right: 8px;
+        width: 4px;
+        height: 4px;
+        background-color: var(--black-placeholder);
+        border-radius: 50%;
+    }
+}

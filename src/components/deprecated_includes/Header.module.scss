@@ -1,0 +1,53 @@
+@use '../../assets/scss/variables' as *;
+@use '../../assets/scss/mixins' as *;
+
+.header {
+  border-bottom: 1px solid $gray-200;
+  background: $white;
+}
+
+.top {
+  @include container;
+  display: grid;
+  grid-template-columns: 1fr auto auto auto auto;
+  align-items: center;
+  gap: $space-6;
+  padding: $space-4 0;
+}
+
+.brand {
+  @include type(headline);
+  color: $orange-500;
+}
+
+.topNav {
+  display: flex; gap: $space-6;
+  a { @include type(primary); color: $gray-900; display: inline-flex; align-items: center; gap: 6px; }
+  a:hover { color: $orange-600; }
+  .chev { width: 8px; height: 8px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg); margin-top: 2px; opacity: .6; }
+}
+
+.meta {
+  display: inline-flex; gap: $space-4; align-items: center;
+  color: $gray-700;
+  .dot { width: 4px; height: 4px; border-radius: 50%; background: $gray-500; display: inline-block; }
+}
+
+.phone {
+  display: inline-flex; gap: 8px; align-items: center; color: $teal-900;
+  .icon { width: 18px; height: 18px; border: 2px solid $teal-700; border-radius: 50%; position: relative; }
+  .icon:after { content: ''; position: absolute; width: 6px; height: 6px; border-left: 2px solid $teal-700; border-bottom: 2px solid $teal-700; border-radius: 0 0 0 100%; left: 4px; top: 4px; transform: rotate(-45deg); }
+}
+
+.login {
+  justify-self: end;
+  .btn { padding: 10px 16px; border-radius: 12px; border: 1px solid #0F9C9A; color: $teal-700; background: transparent; font-weight: $fw-semibold; }
+}
+
+.bottom {
+  @include container;
+  display: flex; gap: $space-6;
+  padding: $space-3 0;
+  a { color: $gray-900; @include type(primary); }
+  a:hover { color: $orange-600; }
+}

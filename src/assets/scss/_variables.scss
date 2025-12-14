@@ -1,0 +1,103 @@
+// === Design tokens (from Figma) ===
+
+// Fonts
+$font-primary: 'Lato', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+// Font weights
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+
+// Breakpoints
+$bp-tablet: 1024px;
+$bp-mobile: 768px;
+
+$header-menu-hover-bg: #EDFAFA;
+
+// Colors — brand orange
+$orange-50:  #F2EEEE;
+$orange-100: #F9D0C2;
+$orange-200: #F8AE96;
+$orange-300: #FB906C;
+$orange-400: #FB7448;
+$orange-500: #FB5E29;
+$orange-600: #EF5824;
+$orange-700: #E35221;
+$orange-800: #D34A1C;
+$orange-900: #BB3F14;
+$orange-a100: #F9A286;
+$orange-a200: #FB7445;
+$orange-a400: #FD470F;
+$orange-a700: #D8350A;
+
+// Colors — teal
+$teal-50:  #E9F3F4;
+$teal-100: #B9DEE0;
+$teal-200: #88CACC;
+$teal-300: #53B5B6;
+$teal-400: #29A6A6;
+$teal-500: #099694;
+$teal-600: #048885;
+$teal-700: #117A76;
+$teal-800: #046A66;
+$teal-900: #074D48;
+$teal-a100: #ABFFFF;
+$teal-a200: #5DFFFF;
+$teal-a400: #00EACC;
+$teal-a700: #00C0B5;
+
+// Extras from comps
+$brown-500: #BA684C;
+$gray-900:  #303030;
+$gray-800:  #3A3A3A;
+$gray-700:  #4A4A4A;
+$gray-600:  #6B6B6B;
+$gray-500:  #8E8E8E;
+$gray-200:  #EDEDED;
+$gray-100:  #F5F5F5;
+$white:     #FFFFFF;
+$black:     #000000;
+$black-primary: #121212;
+$placeholder-color: #758282;
+
+// Elevation
+$border-radius-lg: 12px;
+$border-radius-xl: 16px;
+$border-radius-2xl: 20px;
+
+// Spacing scale (4px grid)
+$space-1: 4px;
+$space-2: 8px;
+$space-3: 12px;
+$space-4: 16px;
+$space-5: 20px;
+$space-6: 24px;
+$space-8: 32px;
+$space-10: 40px;
+$space-12: 48px;
+
+// Typography — desktop
+$h1-size: 52px; $h1-line: 56px; $h1-weight: $fw-semibold;
+$h2-size: 40px; $h2-line: 44px; $h2-weight: $fw-semibold;
+$h3-size: 32px; $h3-line: 40px; $h3-weight: $fw-semibold;
+$h4-size: 24px; $h4-line: 40px; $h4-weight: $fw-semibold;
+$headline-size: 20px; $headline-line: 28px; $headline-weight: $fw-semibold;
+$accent-size: 16px; $accent-line: 24px; $accent-weight: $fw-semibold;
+$primary-size: 16px; $primary-line: 24px; $primary-weight: $fw-regular;
+$notes-accent-size: 14px; $notes-accent-line: 20px; $notes-accent-weight: $fw-semibold;
+$notes-size: 14px; $notes-line: 20px; $notes-weight: $fw-regular;
+$tag-size: 10px; $tag-line: 16px; $tag-weight: $fw-medium;
+
+// Typography — tablet/mobile
+$h1m-size: 40px; $h1m-line: 44px;
+$h2m-size: 32px; $h2m-line: 40px;
+$h3m-size: 24px; $h3m-line: 40px;
+$h4m-size: 20px; $h4m-line: 28px;
+$headlinem-size: 18px; $headlinem-line: 24px;
+$accentm-size: 16px; $accentm-line: 24px;
+$primarym-size: 16px; $primarym-line: 24px;
+$notes-accentm-size: 14px; $notes-accentm-line: 20px;
+$notesm-size: 14px; $notesm-line: 20px;
+$tagm-size: 10px; $tagm-line: 16px;
+
+

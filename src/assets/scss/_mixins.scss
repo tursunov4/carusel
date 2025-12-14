@@ -1,0 +1,49 @@
+@use 'variables' as *;
+
+// Responsive type mixin
+@mixin type($variant) {
+  font-family: $font-primary;
+  @if $variant == h1 {
+    font-weight: $h1-weight; font-size: $h1-size; line-height: $h1-line;
+    @media (max-width: $bp-tablet) { font-size: $h1m-size; line-height: $h1m-line; }
+  } @else if $variant == h2 {
+    font-weight: $h2-weight; font-size: $h2-size; line-height: $h2-line;
+    @media (max-width: $bp-tablet) { font-size: $h2m-size; line-height: $h2m-line; }
+  } @else if $variant == h3 {
+    font-weight: $h3-weight; font-size: $h3-size; line-height: $h3-line;
+    @media (max-width: $bp-tablet) { font-size: $h3m-size; line-height: $h3m-line; }
+  } @else if $variant == h4 {
+    font-weight: $h4-weight; font-size: $h4-size; line-height: $h4-line;
+    @media (max-width: $bp-tablet) { font-size: $h4m-size; line-height: $h4m-line; }
+  } @else if $variant == headline {
+    font-weight: $headline-weight; font-size: $headline-size; line-height: $headline-line;
+    @media (max-width: $bp-tablet) { font-size: $headlinem-size; line-height: $headlinem-line; }
+  } @else if $variant == accent {
+    font-weight: $accent-weight; font-size: $accent-size; line-height: $accent-line;
+    @media (max-width: $bp-tablet) { font-size: $accentm-size; line-height: $accentm-line; }
+  } @else if $variant == primary {
+    font-weight: $primary-weight; font-size: $primary-size; line-height: $primary-line;
+    @media (max-width: $bp-tablet) { font-size: $primarym-size; line-height: $primarym-line; }
+  } @else if $variant == notes-accent {
+    font-weight: $notes-accent-weight; font-size: $notes-accent-size; line-height: $notes-accent-line;
+    @media (max-width: $bp-tablet) { font-size: $notes-accentm-size; line-height: $notes-accentm-line; }
+  } @else if $variant == notes {
+    font-weight: $notes-weight; font-size: $notes-size; line-height: $notes-line;
+    @media (max-width: $bp-tablet) { font-size: $notesm-size; line-height: $notesm-line; }
+  } @else if $variant == tag {
+    font-weight: $tag-weight; font-size: $tag-size; line-height: $tag-line; letter-spacing: .04em; text-transform: uppercase;
+    @media (max-width: $bp-tablet) { font-size: $tagm-size; line-height: $tagm-line; }
+  }
+}
+
+@mixin container {
+  width: min(1200px, 100% - 32px);
+  margin-inline: auto;
+}
+
+// Utility
+@mixin focus-ring($color: $teal-500) {
+  outline: 2px solid transparent;
+  box-shadow: 0 0 0 3px rgba($color, .35);
+  transition: box-shadow .2s ease;
+}

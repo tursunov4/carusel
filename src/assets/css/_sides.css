@@ -1,0 +1,130 @@
+.sides {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-6);
+    padding-block: var(--space-6);
+    width: 100%;
+
+    @media screen  and (max-width: 768px) {
+        gap: var(--space-4);
+    }
+    @media screen  and (max-width: 576px) {
+        gap: var(--space-2);
+    }
+
+
+    .left-side {
+        flex: 280px;
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-6);
+        overflow-x: hidden;
+
+        @media screen and (max-width: 992px) {
+            order: 2;
+        }
+
+    }
+
+    .sidebar {
+        flex: 0 0 var(--sidebar-width);
+
+        &.expanded-sidebar {
+            flex-basis: 390px;
+        }
+
+
+        @media screen and (max-width: 992px) {
+            /* display: none; */
+            flex: 1 0 100%;
+            max-width: 100%;
+
+            &.expanded-sidebar {
+                flex-basis: 100%;
+            }
+        }
+
+
+        .sidebar-content {
+            position: sticky;
+            top: var(--header-indent);
+            display: flex;
+            flex-direction: column;
+
+            gap: var(--space-6);
+
+            &.no-bottom-header {
+                --header-indent: var(--space-2);
+            }
+
+            @media screen and (max-width: 992px) {
+                flex-direction: row;
+                max-width: 100%;
+                overflow-x: auto;
+            }
+
+
+            .sidebar-item {
+                cursor: pointer;
+                background-color: var(--white);
+                z-index: 40;
+                gap: var(--space-3);
+
+                &.on-top {
+                    z-index: 49;
+                }
+
+                @media screen and (max-width: 992px) {
+                    min-width: 240px;
+
+                }
+
+                @media screen and (max-width: 576px) {
+                    /* display: none; */
+                    &.main-item {
+                        /* display: block; */
+                        flex: 1 1 100%;
+
+
+                        .image-block {
+                            max-height: 200px;
+                            border-radius: var(--space-3);
+                            overflow: hidden;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                object-position: center;
+                            }
+                        }
+
+
+                    }
+
+                    &.hide-on-mobile {
+                        display: none;
+                    }
+
+                }
+            }
+
+            &.scrollable {
+                max-height: calc(100vh - var(--header-indent));
+                overflow-y: auto;
+                flex-wrap: wrap;
+            }
+
+
+        }
+
+
+    }
+}
+
+
+
+
+
+
