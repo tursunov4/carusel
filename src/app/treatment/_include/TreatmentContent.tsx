@@ -406,6 +406,7 @@ export default function TreatmentContent({ data }: { data: Treatment }) {
           {/* <SinglePageParentSection id="includes" title="Дополнительные преимущества">
                         <RelatedCardsList items={relatedData || []}/>
                     </SinglePageParentSection> */}
+          {/* dfasdfas */}
 
           <SinglePageParentSection id="choose-hotel">
             <div className="flex flex-row justify-between mb-4">
